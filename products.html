@@ -370,7 +370,7 @@
             background: rgba(0, 240, 255, 0.05);
         }
 
-        /* ===== FOOTER ===== */
+              /* ===== FOOTER ===== */
         .footer {
             position: relative;
             z-index: 1;
@@ -382,21 +382,22 @@
             max-width: 1280px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: 1.4fr 1.4fr 1.2fr 1.2fr;
+            gap: 30px;
             margin-bottom: 40px;
         }
         .footer-brand p {
             color: var(--text-muted);
             font-size: 0.95rem;
-            max-width: 300px;
+            max-width: 100%;
             margin-top: 12px;
             line-height: 1.8;
         }
         .footer-socials {
             display: flex;
-            gap: 16px;
+            gap: 14px;
             margin-top: 16px;
+            flex-wrap: wrap;
         }
         .footer-socials a {
             width: 42px;
@@ -409,6 +410,7 @@
             color: var(--text-muted);
             transition: all 0.4s ease;
             text-decoration: none;
+            font-size: 18px;
         }
         .footer-socials a:hover {
             border-color: var(--primary);
@@ -438,6 +440,53 @@
             color: var(--primary);
             padding-left: 6px;
         }
+        .footer-col.address ul li {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            line-height: 1.7;
+            list-style: none;
+            margin-bottom: 6px;
+        }
+        .footer-col.address ul li i {
+            width: 20px;
+            color: var(--primary);
+            margin-right: 8px;
+        }
+
+        /* Map Embed */
+        .footer-map {
+            margin-top: 8px;
+        }
+        .footer-map iframe {
+            width: 100%;
+            max-width: 240px;
+            height: 160px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            filter: grayscale(0.3) brightness(0.8);
+            transition: all 0.4s ease;
+        }
+        .footer-map iframe:hover {
+            filter: grayscale(0) brightness(1);
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.1);
+        }
+        .footer-map .map-link {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+            text-align: center;
+        }
+        .footer-map .map-link a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .footer-map .map-link a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
         .footer-bottom {
             max-width: 1280px;
             margin: 0 auto;
